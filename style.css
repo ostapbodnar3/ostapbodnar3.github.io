@@ -1,43 +1,40 @@
 body {
-    background-color: #ffffff; /* білий фон */
-    color: #000000; /* чорний колір тексту */
+    background-color: #ffffff;
+    color: #000000; 
     margin: 0;
     padding: 0;
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     text-align: justify;
 }
-.white-line {
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+.header-white-line {
     height: 45px;
     background-color: white;
 }
-.red-line {
+.header-red-line {
     height: 70px;
     background-color: #ff3131;
 }
 .small-red-line {
-    height: 0.5%;
-    width: 30%;
+    height: 3px;
+    width: 300px;
     background-color: #ff3131;
 }
 .name {
-    margin: 50px;
-    border-bottom: 4px solid red;
-    width: 80%; 
-    margin: 0 auto; 
-}
-.text-name {
     font-weight:  normal;
     font-style: normal;
     font-size: 58px;
     letter-spacing: 5px;
     font-family: "Montserrat", sans-serif;
+    padding: 30px;
 }
 .flex-container {
     display: flex;
     flex-direction: row;
-    width: 87%;
-    max-width: 100%;
     margin: auto;
     padding: 3rem 0;
     justify-content: space-between;  /* This will put space between the two items */
@@ -50,9 +47,6 @@ body {
 }
 .flex-container > div {
     width: 100%;
-}
-section {
-    margin-bottom: 2rem;
 }
 h1 {
     text-align: center;
@@ -67,25 +61,22 @@ ul {
     padding: 0; /* Removes the left padding */
     list-style-type: none;
 }
-
-footer {
-    background-color: #ff0000; /* червоний колір */
-    color: #ffffff; /* білий колір тексту */
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+a {
+    text-decoration: none;
+    color: black;
 }
-
+.social-media-links > ul {
+    padding-top: 20px;
+}
+.social-media-links > ul > li:hover {
+    opacity: 0.7;
+}
 
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
   }
+    .flex-item {
+        margin: 0px;
+    }
 }
-
-
-
-
-
