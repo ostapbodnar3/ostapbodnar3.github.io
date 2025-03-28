@@ -8,7 +8,7 @@ body {
     text-align: justify;
 }
 .container {
-    width: 85%;
+    width: 65%;
     margin: 0 auto;
 }
 .header-white-line {
@@ -36,11 +36,7 @@ body {
     display: flex;
     flex-direction: row;
     margin: auto;
-    padding: 3rem 0;
     justify-content: space-between;  /* This will put space between the two items */
-}
-.flex-item {
-    margin: 30px;
 }
 .flex-item > ul {
     padding-top: 20px;
@@ -71,12 +67,18 @@ a {
 .social-media-links > ul > li:hover {
     opacity: 0.7;
 }
+.portfolio {
+    padding-bottom: 3rem;
+}
+
+.footer {
+    height: 70px;
+    background-color: #ff3131;
+}
 
 @media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
-  }
-    .flex-item {
-        margin: 0px;
+    .name {
+        font-size: 38px;
+        padding: 30px;
     }
 }
