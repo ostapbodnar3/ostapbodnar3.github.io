@@ -21,7 +21,7 @@ body {
 }
 .small-red-line {
     height: 3px;
-    width: 300px;
+    width: 100%;
     background-color: #ff3131;
 }
 .name {
@@ -41,9 +41,7 @@ body {
 .flex-item > ul {
     padding-top: 20px;
 }
-.flex-container > div {
-    width: 100%;
-}
+
 h1 {
     text-align: center;
 }
@@ -61,6 +59,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 .social-media-links > ul {
     padding-top: 20px;
 }
@@ -75,6 +74,44 @@ a {
     height: 70px;
     background-color: #ff3131;
 }
+
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-top: 28px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 18px 16px;
+}
+
+.btn {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 8px 24px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 16px;
+}
+
+.btn > a {
+  color: white;
+} 
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: DarkRed;
+}
+
 
 @media (max-width: 800px) {
     .name {
